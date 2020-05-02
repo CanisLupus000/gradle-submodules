@@ -1,2 +1,2 @@
 rootProject.name = "gradle-submodules"
-include("ChildProjectA")
+include("ChildProjectA", "ChildProjectB")
