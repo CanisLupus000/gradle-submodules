@@ -14,4 +14,11 @@ subprojects{
     dependencies{
         testImplementation(group="org.junit.jupiter", name="junit-jupiter", version="5.6.2")
     }
+
+    tasks.test {
+        useJUnitPlatform()
+        testLogging {
+            events("passed", "skipped", "failed")
+        }
+    }
 }
